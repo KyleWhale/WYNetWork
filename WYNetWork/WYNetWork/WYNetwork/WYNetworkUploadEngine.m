@@ -178,6 +178,7 @@
     __weak __typeof(self) weakSelf = self;
     NSURLSessionDataTask *uploadTask = [_sessionManager POST:requestModel.requestUrl
                                                   parameters:requestModel.parameters
+                                                     headers:@{}
                                    constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                                        
                                        
